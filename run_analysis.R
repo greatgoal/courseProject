@@ -80,14 +80,17 @@ run_analysis <- function(){
   colnames(extractData) <- tempName
   
   # Step 5
-  # User aggregate function to group the dataset by subject and activity and compute the mean
+  # Use aggregate function to group the dataset by subject and activity and compute the mean
   tidyAverageData <- aggregate(extractData[3:ncol(extractData)],by=list(extractData$Subject,extractData$Activity),mean)
   # Rename column names to make it more descriptive and releavant
   tempName <- sub("Time","AverageTime",tempName)
   tempName <- sub("Frequency","AverageFrequency",tempName)
   colnames(tidyAverageData) <- tempName
   
-  # Export the data set to a text file
+  # Export the tidy data set to a text file
   write.table(tidyAverageData,"tidyData.txt",row.names=FALSE)
+  
+  # Return the tidy data set
+  tidyAverageData
 
 }
