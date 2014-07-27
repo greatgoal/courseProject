@@ -2,7 +2,7 @@
 
 ### Introduction
 This code book describes the variables, the data, and any transformations or work that have been performed to clean up the data.
-The format of the variable explanation is: number count, variable name, data type, description. Number count and variable name are in the same line.
+The format of the variable explanation is: number count, variable name, data type, description.
 
 ### Variable Explanation
 1. "Subject":
@@ -214,5 +214,5 @@ Average of standard deviations for the frequency of body angular velocity jerk m
 The original fragmented dataset can be downloaded at "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip".
 After unzipping the file, there is a file called "features_info.txt" that describes the original variable names.
 The original variable names have been replaced with more descriptive variable names.
-In particular, "Gyro" has been replaced with "Angular Velocity". An "Average" has been added to each variable name after computing the average values of each variable.
+In particular, "Gyro" has been replaced with "Angular Velocity". An "Average" has been added to each variable name after computing the average values of each mean or standard deviation measure.
 For detailed transformation or work done to clean the data, please refer to the "Script Process & Data Transformation" section of "README.md" that can be viewed at "https://github.com/greatgoal/courseProject/blob/master/README.md". 
